@@ -1,6 +1,4 @@
-(ns paradigms-of-artificial-intelligence.core)
-
-;; chapter 2
+(ns paradigms-of-artificial-intelligence.ch2-1)
 
 (defn Article []
   (list (rand-nth ["the" "a"])))
@@ -17,5 +15,5 @@
 (defn verb-phrase []
   (concat (Verb) (noun-phrase)))
 
-(defn sentance []
+(defn sentence []
   (concat (noun-phrase) (verb-phrase)))
