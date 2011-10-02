@@ -1,4 +1,7 @@
-(ns paradigms-of-artificial-intelligence.ch2-1)
+(ns paradigms-of-artificial-intelligence.ch2)
+
+;; Section 2.1
+;; A grammar for a subset of english.
 
 (defn Article []
   (list (rand-nth ["the" "a"])))
@@ -17,3 +20,6 @@
 
 (defn sentence []
   (concat (noun-phrase) (verb-phrase)))
+
+;; (sentence)
+;; ("a" "woman" "took" "a" "woman")
